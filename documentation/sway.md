@@ -1,4 +1,4 @@
-i# Sway
+# Sway
 
 ## Introduction
 Sway est un gestionnaire de fenêtre en pavage manuel (tiling en anglais) permettant maximiser l’utilisation de l’écran et l’utilisation du clavier. Il est également capable de mettre certaines fenêtres en « floating », c’est-a-dire avec le même comportement qu’un gestionnaire de fenêtre classique (GNOME, Openbox, etc).
