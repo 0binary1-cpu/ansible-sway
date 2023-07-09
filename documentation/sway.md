@@ -5,8 +5,8 @@ Sway est un gestionnaire de fenêtre en pavage manuel (tiling en anglais) permet
 **Note:** Certaines applications ne tournent pas uniquement avec Wayland, il faut potentiellement installer xwayland afin d’exécuter ces applications.
 
 ## Configuration
-La configuration de sway se fait dans le fichier "config" suivant: *$HOME/.config/sway/config*. Pour mieux organiser notre configuration et permettre de retrouver plus facilement une partie particulière la configuration est séparée comme ci dessous:
-`
+La configuration de sway se fait dans le fichier "config" suivant: *$HOME/.config/sway/config*. Pour mieux organiser notre configuration et permettre de retrouver plus facilement une partie particulière, la configuration est séparée comme ci dessous:
+```
 ├── conf.d
 │   ├── gaps.conf
 │   ├── inputs.conf
@@ -15,7 +15,7 @@ La configuration de sway se fait dans le fichier "config" suivant: *$HOME/.confi
 │   ├── system-operation.conf
 │   └── theme.conf
 └─── config
-`
+```
 
 ### Input
 Pour avoir un aperçu des inputs de votre ordinateur:
