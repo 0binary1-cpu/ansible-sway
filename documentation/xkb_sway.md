@@ -1,6 +1,5 @@
 # Configuration du clavier avec xkb
 
-## Pourquoi étudier xkb en 2023?
 XKB ca date de 1996 pour le document de spec qui fait autorité. XKB est issue de x-windows alors pourquoi s'embeter avec ça quand son bureau est sous wayland natif (via sway)?
 
 Alors comme XKB reste un standard de description de clavier et de touches, il reste pas mal utilisé par de nombreux composants actuels. Et puis, de nombreux composants Wayland utilisent la bibliothèque *xkbcommon* qui s'appuie sur la spécification XKB (pas dans son intégralité).
