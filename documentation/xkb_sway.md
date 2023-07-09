@@ -78,11 +78,13 @@ Pour vous convaincre de ce que j'ai expliqué plus haut, ça peut être intéres
 
 Pour ça, un bon vieux xev des familles fait le job plutôt bien. Je vous laisse taper sur votre clavier avec, ça donne la sortie suivante lors de l'appui sur une touche:
 
+```
 KeyRelease event, serial 34, synthetic NO, window 0x800001,
 root 0x522, subw 0x0, time 3413735, (443,329), root:(1128,350),
 state 0x4, keycode 37 (keysym 0xffe3, Control_L), same_screen YES,
 XLookupString gives 0 bytes:
 XFilterEvent returns: False
+```
 
 La valeur qui vous intéresse, c'est keycode 37. C'est la valeur de la touche 37 qui est convertie par xkb en Control_Left.
 
