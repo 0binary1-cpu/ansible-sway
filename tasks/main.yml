@@ -1,0 +1,27 @@
+---
+
+- name: Install required packages for sway
+  ansible.builtin.package:
+    name:
+      - "{{ item  }}"
+    state: latest
+  become: yes
+  loop:
+    - sway
+    - xwayland
+
+# Les droits ne sont pas gérés mode:
+- name: Create skeleton for sway configuration
+  ansible.builtin.file:
+    path:
+      - "{{ item }}"
+    state: directory
+  loop:
+    - "{{ ansible_env.HOME }}/.config"
+    - "{{ ansible_env.HOME }}/.config/sway"
+    - "{{ ansible_env.HOME }}/.config/sway/config.d"
+
+      #- name: Deploy configuration files for sway
+
+
+
