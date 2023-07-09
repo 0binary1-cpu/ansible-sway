@@ -35,6 +35,6 @@ Pour voir la totalié des options disponibles
 
 
 sources
-(https://swaywm.org/)
-(https://debian-facile.org/atelier:chantier:sway)
-(https://medspx.fr/blog/Debian/configuration_clavier_avec_xkb/)
+* (https://swaywm.org/)
+* (https://debian-facile.org/atelier:chantier:sway)
+* (https://medspx.fr/blog/Debian/configuration_clavier_avec_xkb/)
