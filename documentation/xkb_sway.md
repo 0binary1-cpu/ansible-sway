@@ -54,10 +54,10 @@ On trouve trace de pc105 dans les fichiers rules/base et rules/evdev où on a bi
 ```
     xkb_symbols "pc105" {
 
-    key <ESC>  {	[ Escape		]	};
+    key <ESC>  {[ Escape]};
 
     // The extra key on many European keyboards:
-    key <LSGT> {	[ less, greater, bar, brokenbar ] };
+    key <LSGT> {[ less, greater, bar, brokenbar ] };
     ...
 ```
 
