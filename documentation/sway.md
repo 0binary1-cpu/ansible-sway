@@ -17,6 +17,8 @@ La configuration de sway se fait dans le fichier "config" suivant: *$HOME/.confi
 └─── config
 ```
 
+La configuration par défault se trouve dans */etc/sway/config*
+
 ### Input
 Pour avoir un aperçu des inputs de votre ordinateur:
 `swaymsg -t get_inputs`
