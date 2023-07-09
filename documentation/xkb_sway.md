@@ -91,4 +91,4 @@ La valeur qui vous intéresse, c'est keycode 37. C'est la valeur de la touche 37
 
 En utilisant xev sur mon clavier de portable, j'ai pu faire un certain nombre de découvertes. Par exemple, la touche Fn n'est pas une vraie touche dans le sens où quand on appuie dessus, xev ne capture rien. C'est donc que c'est géré uniquement du côté hardware. Ou encore, je me suis rendu compte que quand je frappe Fn-s, ça renvoie le keycode 107 qui correspond à PrintScreen, alors que rien n'est affiché sur la touche s à ce sujet. Encore un truc généré par le hardware. De plus, Fn-o génère un keycode de keypad (85).
 
-Vous pouvez aussi utiliser wev, packagé dans Debian pour avoir l'équivalent de xev sous Wayland: `wev -f wl_keyboard`
+Vous pouvez aussi utiliser **wev**, packagé dans Debian pour avoir l'équivalent de xev sous Wayland: `wev -f wl_keyboard`
