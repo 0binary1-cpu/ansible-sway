@@ -72,7 +72,8 @@ De cette manière, on voit bien que c'est finalement très rare d'avoir à redé
 Voilà pourquoi la config sway de base sus-citées convient à 99% des claviers en français. En la déployant sur toutes mes machines, j'arrive à faire fonctionner toutes les touches de tous les claviers français, y compris les touches multimédia. Ce qui me manquait sur certaines configuration, c'était que je n'utilisais pas la variante oss mais la latin9 qui ne gère pas les majuscules accentuées. Voilà le fin mot de l'histoire.
 
 Selon moi, le seul cas utile de créer une configuration xkb spécifique, c'est lorsque vous décidez de bouger les touches physiques de votre clavier pour faire une nouvelle affectation des keycodes. Par exemple si vous avez un clavier azerty et que vous voulez le transformer physiquement en dvorak en déplaçant les touches (en les retirant du clavier pour les placer ailleurs). Mais ce n'est pas mon utilisation.
-Comment trouver les keycodes du clavier
+
+## Comment trouver les keycodes du clavier
 
 Pour vous convaincre de ce que j'ai expliqué plus haut, ça peut être intéressant de savoir comment on fait pour récupérer les keycodes qui sortent du hardware du clavier.
 
