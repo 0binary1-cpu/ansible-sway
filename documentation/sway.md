@@ -17,7 +17,7 @@ La configuration de sway se fait dans le fichier "config" suivant: *$HOME/.confi
 └─── config
 ```
 
-La configuration par défault se trouve dans */etc/sway/config* à laquelle on ajoute la ligne suivante: *include $HOME/.config/sway/conf.d/**
+La configuration par défault se trouve dans */etc/sway/config* à laquelle on ajoute la ligne suivante: `include $HOME/.config/sway/conf.d/*`
 
 ### Input
 Pour avoir un aperçu des inputs de votre ordinateur:
