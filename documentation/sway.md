@@ -1,9 +1,8 @@
 # Sway
 
-## Introduction
 Sway est un gestionnaire de fenêtre en pavage manuel (tiling en anglais) permettant maximiser l’utilisation de l’écran et l’utilisation du clavier. Il est également capable de mettre certaines fenêtres en « floating », c’est-a-dire avec le même comportement qu’un gestionnaire de fenêtre classique (GNOME, Openbox, etc).
 
-** Note: ** Certaines applications ne tournent pas uniquement avec Wayland, il faut potentiellement installer xwayland afin d’exécuter ces applications.
+**Note:** Certaines applications ne tournent pas uniquement avec Wayland, il faut potentiellement installer xwayland afin d’exécuter ces applications.
 
 ## Configuration
 La configuration de sway se fait dans le fichier "config" suivant; *$HOME/.config/sway/config*. Pour mieux organiser notre configuration et permettre de retrouver plus facilement une partie particulière la configuration est séparée comme ci dessous:
