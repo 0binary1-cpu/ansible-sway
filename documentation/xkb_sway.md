@@ -6,7 +6,7 @@ Alors comme xkb reste un standard de description de clavier et de touches, il re
 
 En conclusion Sway utilise complètement xkb dans sa configuration du clavier. Donc, si on veut déclarer correctement son clavier, il reste toujours important de maitriser un minimum xkb. C'est aussi pour ça qu'on a des directives xkb dans sway.
 
-## xkb quesako?
+## xkb quésaco?
 On trouve la base de donnée dans */usr/share/X11/xkb/*. Sous Debian, c'est porté par le paquet *xkb-data*, lui meme un sous ensemble du paquet source *xkeyboard-config* qui vient tout droit de chez *freedesktop*.
 L'organisation se passe ainsi:
 
