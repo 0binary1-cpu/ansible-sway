@@ -10,18 +10,37 @@
     - sway
     - xwayland
 
-# Les droits ne sont pas gérés mode:
 - name: Create skeleton for sway configuration
   ansible.builtin.file:
-    path:
-      - "{{ item }}"
+    path: "{{ item }}"
     state: directory
   loop:
     - "{{ ansible_env.HOME }}/.config"
     - "{{ ansible_env.HOME }}/.config/sway"
     - "{{ ansible_env.HOME }}/.config/sway/config.d"
 
-      #- name: Deploy configuration files for sway
+- name: Deploy configuration file for sway
+  block:
+    - name: 1
+      ansible.builtin.copy:
+        remote_src: yes
+        src: /etc/sway/config
+        dest: "{{ ansible_env.HOME }}/.config/sway/"
 
+    - name: 2
+      ansible.builtin.replace:
+        path: "{{ ansible_env.HOME }}/.config/sway/config"
+        regexp: '^include /etc/sway/'
+        replace: "{{ ansible_env.HOME }}/.config/sway/"
 
+    - name: 3
+      ansible.builtin.lineinfile:
+        path: "{{ ansible_env.HOME }}/.config/sway/config"
+        insertbefore: BOF
+        line: '# Managed by Ansible'
+
+- name: Deploy specific configuration files for sway
+  ansible.builtin.copy:
+    src: config.d
+    dest: "{{ ansible_env.HOME }}/.config/sway/config.d/"
 
